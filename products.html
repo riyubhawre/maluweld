@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/785124d656.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+          ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #DE1C13;
+        position: fixed;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: azure;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown :hover .dropbtn {
+        background-color: black;
+    }
+
+    li .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: bisque;
+    }
+
+    .dropdown :hover .dropdown-content {
+        display: block;
+    }
+    .mobhead{
+        display: none;
+    }
+
+        #vish {
+            float: right;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        #section {
+            margin: 20px;
+            width: 150px;
+            float: right;
+            text-align: center;
+            padding: 10px;
+            margin-right: 30px;
+        }
+
+        #footer {
+            background-color: #DE1C13;
+            width: 100%;
+            height: 150px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #section1 {
+            margin: 20px;
+            width: 275px;
+            height: 300px;
+            float: left;
+            text-align:center;
+            padding: 10px;
+            border-radius: 12px;
+            align-content: center;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 3px 3px;
+            margin-left: 120px;
+            margin-top: 70px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #section1:hover {
+            background-color:rgb(216, 105, 105);
+            border-radius: 0px;
+            color: white;
+        }
+
+        #client {
+            background-color: white;
+            width: 100%;
+            height: 350px;
+            margin-top: 830px;
+            margin-right: 250px;
+        }
+
+        #f1 {
+            margin-top: 30px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .dropbtn {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            margin: 0px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            width: 230px;
+            margin-top: 50px;
+            margin-left: 40px;
+            margin-right: 60px;
+        }
+
+        .dropdown {
+            position: relative;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(78, 78, 192);
+        }
+
+        .vih {
+            height: 600px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #va {
+            align-items: center;
+            color: white;
+            margin-left: 440px;
+        }
+
+        #va1 {
+            align-items: center;
+            color: white;
+            margin-left: 550px;
+        }
+
+        #v1 {
+            align-items: center;
+            color: white;
+            margin-left: 500px;
+        }
+
+        #v2 {
+            align-items: center;
+            color: white;
+            margin-left: 430px;
+        }
+        
+        .section2 {
+            width: 600px;
+            height: 600px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 3px 3px;
+            margin-left: 50px;
+        }
+        .govind{
+            margin-left: 350px;
+            width: 700px;height: 100px;  background-color: #DE1C13;
+            color: white;
+            text-align: center;
+            box-shadow: 5px 5px 5px 5px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 800px) {
+            ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #DE1C13;
+        position: fixed;
+        width: 50%;
+        display: none;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: azure;
+        text-align: center;
+        padding: 4px 12px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown :hover .dropbtn {
+        background-color: black;
+    }
+
+    li .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .Deskhead{
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+body{
+  margin: 0;
+}
+
+.mobhead{
+  width: 100%;
+  padding: 5% 5% 10% 5%;
+  margin: 0;
+  height: auto;
+  display: block;
+  /*  position: relative;  */
+  /* / position: fixed; / */
+  border: 1px solid yellowgreen;
+
+  /* / display: none; / */
+
+}
+.mobhead ul li{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* / border: 1px solid yellowgreen; / */
+width: 100%;
+
+}
+.mobhead ul li a{
+  margin: 0;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  /* / border: 1px solid yellowgreen; / */
+width: 100%;
+}
+.mobhead ul{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* height: 210px; */
+}
+li{
+  /* / width: 100%; / */
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+.mobhead i{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+
+}
+ .mobhead .logo1{
+  /* / float: left; / */
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  /* / width: ; / */
+}
+.mobhead .logo1 img{
+  float: left;
+  width: auto;
+  height: 50px;
+}
+            #section1{
+                width: 90%;
+                margin: 20px;
+                height: 250px;
+            }
+            .section3{
+                width: 100%;
+                margin: 10px;
+                height: 600px;
+ 
+            }
+            #client{
+                width: 90%;
+                margin: 5% ;
+                height: 500px;
+                margin-top: 50px;
+                margin-left: 0px;
+               }
+               #footer{
+                margin-top: 900px;
+               }
+               .govind{
+                margin: 0px;
+                margin-top: 1750px;
+                padding: 0px;
+                width: 110%;
+               }
+               #section{
+                margin-left: 100px;
+               }
+    
+        }
+
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 15px;">
+        <ul>
+            <li><a href="#logo"><img src="images/malu weld logo.jpg"
+                        width="150px"
+                        height="60px" style="margin-left: 100px;">
+                </a> </li>
+                <br>
+            <li style="margin-left: 600px;"><a href="index.html">HOME</a>
+            </li>
+            <li><a href="about us.html">ABOUT US</a> </li>
+            <li><a href="products.html">PRODUCTS</a> </li>
+            <li><a href="contact.html">CONTACT US</a> </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".open").click(function(){
+                $(".mini").slideToggle();
+            })
+        })
+        </script>
+    <div class="mobhead" >
+        <div class="logo1"><img src="images/malu weld logo.jpg"><i class="fa-solid fa-bars open"></i></div> 
+        <ul class="mini">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html" >About</a></li>
+            <li><a href="products.html">products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+    </div>
+
+
+    <div class="vih" style="background-image: url(images/contact\ main.jpg);">
+        <br>
+        <br>
+        <br>
+        <center style="color: white;">
+            <br>
+            <br>
+            <div style="font-size: 20px;"><b>
+                    <h1>OUR PRODUCTS<br>-----*-----</h1>
+                </b></div><br><br>
+            <div>
+                <h4>India's Largest selling Maluweld !<br>A wide range of
+                    products to cater every
+                    demand</h4>
+            </div>
+        </center>
+        </div>
+    </div>
+
+    <div>
+        <div id="section1">
+            <dl>
+                <b><h3>Welding Electrode
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">The welding electrode is connected to the welding machine, carrying welding current, and establishes an electric arc to fuse the metals for joining. The coating protects the metal from damage.
+
+                </h5>
+            </dt>
+        </div>
+        <div id="section1">
+            <dl>
+                <b><h3>Bare Electrodes
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">These electrodes do not have a coating of flux on them. These electrodes are often used in automatic and semiautomatic welding, they are metal rods with a pointed tip that create an electrical arc between the electrode and the metal.
+
+                </h5>
+            </dt>
+        </div>
+        <div id="section1">
+            <dl>
+                <b><h3>Coated Electrodes
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">
+                    A welding specialist will be able to restore damaged cars by fusing the metal back together, as well as refilling crevices that have occurred due to collision or general wear and tear.
+                </h5>
+            </dt>
+        </div>
+        <div id="section1">
+            <dl>
+                <b><h3>Lightly Coated Electrodes
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">
+                    Welding with the equipment which needs the operator manipulation or adjustment in response to changes in welding condition.The torch, gun, or electrode holder is held by a mechanical device.</h5>
+            </dt>
+        </div>
+        <div id="section1">
+            <dl>
+                <b><h3>Heavily Coated Electrodes
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">
+                    A Heavily coated electrodes contain a heavy layer of coating. The commonly used materials for coating are titanium-oxide, silica, flour, asbestos clay and calcium carbonate.
+</h5>
+            </dt>
+        </div>
+        <div id="section1">
+            <dl>
+                <b><h3>Wire Electrodes
+                </h3></b>
+            </dl><br>
+            <dt>
+                <h5 style="text-align: justify;">
+                    During welding, an electrode is a metal wire that is used to conduct current and provide the filler material for the weld joint. It can be consumable or non-consumable, depending on the welding process.
+
+</h5>
+            </dt>
+        </div>
+    </div>
+           
+
+    <div id="client">
+        <div class="govind">
+            <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">
+            CLIENTS WE'VE WORKED WITH
+        </h1>
+        <br>
+        <br>
+        </div>
+        <div style="margin-right: 50px;">
+            <br>
+            <br>
+        <div id="section"><img src="images/jain irrigation.jpg" width="150" height="150"></div>
+        <div id="section"><img src="images/grasim ltd.jpg" width="150" height="150"></div>
+        <div id="section"><img src="images/bajaj electricals.jpg" width="150" height="150"></div>
+        <div id="section"><img src="images/bharat earth movers.gif" width="150" height="150"></div>
+        <div id="section"><img src="images/aditya birla group.png" width="150" height="150"></div>
+        <div id="section"><img src="images/diwanka group.jpg" width="150" height="150"></div>
+        </div>
+    </div><br>
+    <div id="footer">
+        <div id="f1">
+            <br>
+            <h4>Copyright © 2023 MaluWeld | Develope by PSK Technologies Pvt.Ltd</h4>
+        </div>
+    </div>
+</body>
